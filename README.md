@@ -137,7 +137,7 @@ This project was conducted as part of our **Machine Learning project** in the se
 
 ## Acknowledgments
 
-I would like to thank **Tony Bonnaire** for his guidance and support throughout this project. His insights were invaluable in shaping the direction of our work.
+I would like to thank **Nicolas Schreuder** for his guidance and support throughout this project. His insights were invaluable in shaping the direction of our work.
 
 ---
 
