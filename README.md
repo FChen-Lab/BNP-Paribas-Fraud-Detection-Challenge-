@@ -91,13 +91,25 @@ The **Gradient Boosting Classifier** performed the best after hyperparameter tun
 Given the **imbalanced nature** of the dataset, accuracy was not an appropriate metric. Instead, the **Precision-Recall AUC (PR-AUC)** was used to evaluate model performance, as it emphasizes the detection of the minority fraud class.
 
 ### PR-AUC Formula:
-\[ \text{PR-AUC} = \sum_{n} (\text{Recall}_n - \text{Recall}_{n-1}) \times \text{Precision}_n \]
+
+The **Precision-Recall Area Under the Curve (PR-AUC)** is calculated as follows:
+
+$$
+\text{PR-AUC} = \sum_{n} (\text{Recall}_n - \text{Recall}_{n-1}) \times \text{Precision}_n
+$$
 
 Where:
-- **Precision** = TP / (TP + FP)
-- **Recall** = TP / (TP + FN)
+- **Precision** is the ratio of true positives (TP) to the total predicted positives:
+  $$
+  \text{Precision} = \frac{TP}{TP + FP}
+  $$
+- **Recall** is the ratio of true positives (TP) to the total actual positives:
+  $$
+  \text{Recall} = \frac{TP}{TP + FN}
+  $$
 
-The **average_precision_score** from **scikit-learn** was used for computation.
+The **average_precision_score** function from **scikit-learn** was used to compute the PR-AUC score.
+
 
 ---
 
