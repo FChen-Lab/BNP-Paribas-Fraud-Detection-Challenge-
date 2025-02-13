@@ -94,9 +94,7 @@ Given the **imbalanced nature** of the dataset, accuracy was not an appropriate 
 
 The **Precision-Recall Area Under the Curve (PR-AUC)** is calculated as follows:
 
-$$
-\text{PR-AUC} = \sum_{n} (\text{Recall}_n - \text{Recall}_{n-1}) \times \text{Precision}_n
-$$
+$\text{PR-AUC} = \sum_{n} (\text{Recall}_n - \text{Recall}_{n-1}) \times \text{Precision}_n$
 
 Where:
 - **Precision** is the ratio of true positives (TP) to the total predicted positives:
